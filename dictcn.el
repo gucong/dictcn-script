@@ -14,5 +14,5 @@
                     (current-word nil t)))
          (word (read-string (format "dict.cn (default: %s): " guess)
                             nil nil guess)))
-    (shell-command (format "dictcn -w %s" word)
+    (shell-command (format "dictcn -w \"%s\"" word)
                    "*dictcn*")))
